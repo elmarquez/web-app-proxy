@@ -22,6 +22,10 @@ if (DISABLE_AUTH === 'true' || DISABLE_AUTH === '1') {
   pino.info('Authentication is disabled', DISABLE_AUTH);
 }
 
+pino.info('API URL', config.get("API"));
+pino.info('UI URL', config.get("UI"));
+
+
 // application ----------------------------------------------------------------
 
 
@@ -177,7 +181,7 @@ function loadApplicationModules (ctx) {
 var ctx = {
   app: null,
   CFG: {
-    DB_URL: config.get('TEST') ? config.get('TEST_DATABASE.URL') : config.get('DATABASE.URL'),
+    DB_URL: config.get('TEST') ? config.get('TEST_DATABASE.URL') : config.get('DB_URL'),
     PORT: config.get('PORT'),
     SESSION: config.get('SESSION')
   }

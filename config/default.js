@@ -1,8 +1,6 @@
 module.exports = {
   API: "http://localhost:8081/api",
-  DATABASE: {
-    URL: 'mongodb://localhost:27017/proxy',
-  },
+  DB_URL: 'mongodb://localhost:27017/proxy',
   DISABLE_AUTH: false,
   ENABLE_CROSS_ORIGIN: false,
   MODULES: ['proxy'],
