@@ -27,6 +27,7 @@
     "pino": "^5.11.1",
     "randomstring": "^1.1.5",
     "request": "^2.88.0",
+    "string": "^3.3.3",
     "uuid": "^3.3.2",
     "zxcvbn": "^4.4.2"
   }
