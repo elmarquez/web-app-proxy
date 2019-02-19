@@ -1,0 +1,8 @@
+{
+  "API": "API",
+  "DISABLE_AUTH": "DISABLE_AUTH",
+  "ENABLE_CROSS_ORIGIN": "ENABLE_CROSS_ORIGIN",
+  "PORT": "PORT",
+  "TEST": "TEST",
+  "UI": "UI"
+}

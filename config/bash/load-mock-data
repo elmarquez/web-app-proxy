@@ -1,0 +1,2 @@
+#!/bin/bash
+mongoimport --db proxy --collection users --jsonArray --file "${BASH_SOURCE%/*}/../../mock/users.json"

@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title><%= title %></title>
+    <style>
+        html, body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            font-size: 14px;
+            height: 100%;
+            margin: 0;
+            padding: 9;
+        }
+        body {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .login {
+            border: 1px solid lightgray;
+            width: 420px;
+        }
+        .login>.body {
+            padding: 8px;
+        }
+        .login>.body form {
+            align-items: stretch;
+            display: flex;
+            flex-direction: column;
+        }
+        .login .field {
+            align-items: stretch;
+            display: flex;
+            flex-direction: column;
+        }
+        .login .field label {
+            color: darkgray;
+            font-size: small;
+            margin: 8px 0 4px 0;
+        }
+        .login button {
+            padding: 8px 12px;
+        }
+
+        .login input {
+            font-size: medium;
+            padding: 4px;
+        }
+        .login>.header {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="login">
+    <div class="header"><%= title %></div>
+    <div class="body">
+        <form action="/login" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <div class="field">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="john@example.com" />
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Password" />
+            </div>
+            <p>
+                <button type="submit">Login</button>
+            </p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

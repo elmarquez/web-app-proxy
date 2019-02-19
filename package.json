@@ -1,0 +1,33 @@
+{
+  "name": "web-app-proxy",
+  "version": "1.0.0",
+  "description": "Web application proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Davis Marques <dmarques@unimelb.edu.au>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "^1.4.4",
+    "csurf": "^1.9.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-pino-logger": "^4.0.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.12",
+    "npm": "^6.8.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pino": "^5.11.1",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.0",
+    "uuid": "^3.3.2",
+    "zxcvbn": "^4.4.2"
+  }
+}
