@@ -139,6 +139,9 @@ function startApplication (ctx) {
 function connectToDatabase (ctx) {
   return new Promise(function (resolve, reject) {
     mongoose.Promise = Promise;
+    mongoose.set('useNewUrlParser', true);
+    mongoose.set('useFindAndModify', false);
+    mongoose.set('useCreateIndex', true);
     if (process.argv.indexOf('--debug-mongoose') > -1) {
       pino.info('Enabled mongoose debugging');
       mongoose.set('debug', true);

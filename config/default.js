@@ -1,5 +1,6 @@
 module.exports = {
   API: "http://localhost:8081/api",
+  APPLICATION_NAME: 'Melbourne eResearch Group',
   DB_URL: 'mongodb://localhost:27017/proxy',
   DISABLE_AUTH: false,
   ENABLE_CROSS_ORIGIN: false,
